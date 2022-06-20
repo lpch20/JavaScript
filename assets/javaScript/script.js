@@ -1,7 +1,10 @@
 /** SEGUNDA ENTREGA, AGREGO DE ARRAYS.
  * El siguiente simulador es en base a una tienda de ropas.
- * Se le consultara al usuario, que prenda desea llevarse, y se establece el precio de la misma.
- *
+ * Se presenta primeramente el stock disponible.
+ * Luego a travers de prompt, se le consulta al usuario que desea comprar. 
+ * Luego se le vuelve a consultar si desea agregar algo mas a su compra. 
+ * Se hace la suma de lo que el usuario lleva y se le suma el IVA. 
+ * Por ultimo se le consulta si desea realiza rla compra, si asi lo desea coloca "si" para finalmente efectuarla. De lo contrario, le damos las graciuas por visitarnos en el sitio.
  */
 
 class Stock {
