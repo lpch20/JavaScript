@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#container img {
+    width: 350px;
+    height: 429px;
+}
+
+#productos {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#nombre h2 {
+    font-size: 40px;
+}
+
+.primerproducto{
+    display: flex;
+    flex-direction: column;
+}

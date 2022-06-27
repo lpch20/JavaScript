@@ -5,26 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Salipser</title>
 </head>
 
 <body>
+
+    <header class="row">
+        <div class="col">
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand">SALIPSER</a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
     <div id="container">
+
+        <div id="nombre">
+            <h2>Productos a la venta</h2>
+        </div>
+
+        <div id="productos">
+            
+            <div class="primerproducto">
+                <img src="./assets/img/remera ripcurl.jpg" alt="">
+                <div id="producto1">
+
+                </div>
+
+                <div id="productouno">
         
-        <h2>Productos a la venta</h2>
-        <div id="producto1"></div>
-        <div id="producto2"></div>
-        <div id="producto3"></div>
-        <div id="producto4"></div>
-        <div id="producto5"></div>
-        <div id="producto6"></div>
-        
+                    <label for="talles">Talles:</label>
+
+                    <select name="talles" id="talles">
+                        <option id="XL"></option>
+                        <option id="L"></option>
+                        <option id="XXL"></option>
+                        <option id="M"></option>
+                    </select>
+                </div>
+
+                <div id="precio">
+
+                </div>
+
+                <button id="compra">
+                    <p>Comprar</p>
+                </button>
+            </div>
+            <div id="producto2"><img src="./assets/img/remera vans.jpg" alt=""></div>
+            <div id="producto3"><img src="./assets/img/pantalon levis.jpg" alt=""></div>
+            <div id="producto4"><img src="./assets/img/pantalon hym.jpg" alt=""></div>
+            <div id="producto5"><img src="./assets/img/campera vans.jpg" alt=""></div>
+            <div id="producto6"><img src="./assets/img/canguro levis.jpg" alt=""></div>
+        </div>
 
     </div>
 
-  
+
     <script src="./assets/javaScript/script.js"></script>
-    <!-- <script src="./assets/javaScript/scriptprueba.js"></script> -->
+    <script src="./assets/javaScript/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

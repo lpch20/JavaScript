@@ -24,52 +24,96 @@ class Stock {
   }
 }
 const productos = [];
-productos.push(new Stock("Remera Ripcurl F", 2500, "L"));
+productos.push(new Stock("Remera Ripcurl F", 2500, ["XL","L","M","XXL"]));
 productos.push(new Stock("Remera Vans", 1500, "M"));
+productos.push(new Stock("Remera Vans", 1500, "XL"));
 productos.push(new Stock("Pantalon Levis 3500", 4000, "34"));
+productos.push(new Stock("Pantalon Levis 3500", 4000, "36"));
+productos.push(new Stock("Pantalon Levis 3500", 4000, "32"));
 productos.push(new Stock("Pantalon HyM", 2500, "36"));
 productos.push(new Stock("Campera Vans", 4000, "XL"));
 productos.push(new Stock("Canguro Levis", 3000, "XL"));
 
 
-
+//PRODUCTO 1
 const container = document.getElementById("producto1");
-const creacion = document.createElement("div");
+const creacion = document.createElement("h4");
 
 creacion.innerHTML = productos[0].nombre;
 
 container.append(creacion);
 
+const XL = document.getElementById("XL")
+const creatalle = document.createElement("p")
+
+creatalle.innerText = productos[0].talle[0]
+
+XL.append(creatalle);
+
+const L = document.getElementById("L")
+const creatalle1 = document.createElement("p")
+
+creatalle1.innerText = productos[0].talle[1];
+L.append(creatalle1);
+
+const XXL = document.getElementById("XXL");
+const creatalle2 = document.createElement("p");
+
+creatalle2.innerText = productos[0].talle[3];
+XXL.append(creatalle2);
+
+const M = document.getElementById("M");
+const creatalle3 = document.createElement("p");
+
+creatalle3.innerText = productos[0].talle[2];
+M.append(creatalle3);
+
+const precio1 = document.getElementById("precio");
+const creaprecio = document.createElement("p");
+
+creaprecio.innerText = ("Precio: $"+productos[0].precio);
+precio1.append(creaprecio);
+
+const boton = document.getElementById("compra");
+boton.onclick = () => {
+  alert("Producto agregado al carrito")
+}
+
+//PRODUCTO 2
+
 const container2 = document.getElementById("producto2");
-const creacion2 = document.createElement("div");
+const creacion2 = document.createElement("h4");
+const creacion8 = document.createElement("p")
 
 creacion2.innerHTML = productos[1].nombre;
+creacion8.innerHTML = ("Precio" + productos[1].precio);
 
 container2.append(creacion2);
+container2.append(creacion8);
 
 const container3 = document.getElementById("producto3");
-const creacion3 = document.createElement("div");
+const creacion3 = document.createElement("h4");
 
 creacion3.innerHTML = productos[2].nombre;
 
 container3.append(creacion3);
 
 const container4 = document.getElementById("producto4");
-const creacion4 = document.createElement("div");
+const creacion4 = document.createElement("h4");
 
 creacion4.innerHTML = productos[3].nombre;
 
 container4.append(creacion4);
 
 const container5 = document.getElementById("producto5");
-const creacion5 = document.createElement("div");
+const creacion5 = document.createElement("h4");
 
 creacion5.innerHTML = productos[4].nombre;
 
 container5.append(creacion5);
 
 const container6 = document.getElementById("producto6");
-const creacion6 = document.createElement("div");
+const creacion6 = document.createElement("h4");
 
 creacion6.innerHTML = productos[5].nombre;
 
