@@ -12,66 +12,295 @@
 
 <body>
 
-    <header class="row">
-        <div class="col">
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand">SALIPSER</a>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">SALIPSER</a>
+            <div id="carritoBuscardor" class="pull-right align-items-center">
+                <form class="buscador">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <ul>
+                    <li class="submenu">
+                        <img src="assets/img/logo de caarrito.png" id="img-carrito">
+                        <div id="carrito">
 
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
 
-
-    <div id="container">
-
-        <div id="nombre">
-            <h2>Productos a la venta</h2>
-        </div>
-
-        <div id="productos">
-            
-            <div class="primerproducto">
-                <img src="./assets/img/remera ripcurl.jpg" alt="">
-                <div id="producto1">
-
-                </div>
-
-                <div id="productouno">
-        
-                    <label for="talles">Talles:</label>
-
-                    <select name="talles" id="talles">
-                        <option id="XL"></option>
-                        <option id="L"></option>
-                        <option id="XXL"></option>
-                        <option id="M"></option>
-                    </select>
-                </div>
-
-                <div id="precio">
-
-                </div>
-
-                <button id="compra">
-                    <p>Comprar</p>
-                </button>
+                            <a href="#" class="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div id="producto2"><img src="./assets/img/remera vans.jpg" alt=""></div>
-            <div id="producto3"><img src="./assets/img/pantalon levis.jpg" alt=""></div>
-            <div id="producto4"><img src="./assets/img/pantalon hym.jpg" alt=""></div>
-            <div id="producto5"><img src="./assets/img/campera vans.jpg" alt=""></div>
-            <div id="producto6"><img src="./assets/img/canguro levis.jpg" alt=""></div>
+
+        </div>
+    </nav>
+
+
+
+
+    <div class="container-fluid">
+
+        <div class="row1">
+            <div id="subtitle1" class="col">
+                <h2>Productos a la venta</h2>
+            </div>
+        </div>
+
+
+        <div class="row2">
+            <div class="col d-flex justify-content-space-around-between">
+                <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                        <svg class="bi me-2" width="30" height="24">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                        <span class="fs-5 fw-semibold">Filtro</span>
+                    </a>
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                                Home
+                            </button>
+                            <div class="collapse" id="home-collapse" style="">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#productouno" class="link-dark rounded">Overview</a></li>
+                                    <li><a href="#" class="link-dark rounded">Updates</a></li>
+                                    <li><a href="#" class="link-dark rounded">Reports</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                Dashboard
+                            </button>
+                            <div class="collapse" id="dashboard-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-dark rounded">Overview</a></li>
+                                    <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                                    <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                                    <li><a href="#" class="link-dark rounded">Annually</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                Orders
+                            </button>
+                            <div class="collapse" id="orders-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-dark rounded">New</a></li>
+                                    <li><a href="#" class="link-dark rounded">Processed</a></li>
+                                    <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                                    <li><a href="#" class="link-dark rounded">Returned</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-top my-3"></li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                Account
+                            </button>
+                            <div class="collapse" id="account-collapse" style="">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-dark rounded">New...</a></li>
+                                    <li><a href="#" class="link-dark rounded">Profile</a></li>
+                                    <li><a href="#" class="link-dark rounded">Settings</a></li>
+                                    <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="productos">
+
+                    <div class="">
+                        <div>
+                            <img class="" src="./assets/img/remera ripcurl.jpg" alt="">
+                            <div id="producto1">
+                                <h4 class="">Remera Ripcurl F</h4>
+                            </div>
+
+                            <div id="productouno">
+
+                                <label for="talles">Talles:</label>
+
+                                <select name="talles" id="talles">
+                                    <option id="XL">XL</option>
+                                    <option id="L">L</option>
+                                    <option id="XXL">XXL</option>
+                                    <option id="M">M</option>
+                                </select>
+
+                            </div>
+
+                            <div id="precio">
+                                <p class="costo">$<span class="">2500</span></p>
+                            </div>
+
+                            <a href="" class="compra" data-id="1">Comprar</a>
+                        </div>
+                    </div>
+                    <div id="">
+                        <div>
+                            <img class="" src="./assets/img/remera vans.jpg" alt="">
+                            <div id="producto1">
+                                <h4 class="">Remera Vans</h4>
+                            </div>
+
+                            <div id="productouno">
+
+                                <label for="talles">Talles:</label>
+
+                                <select name="talles" id="talles">
+                                    <option id="XL">XL</option>
+                                    <option id="L">L</option>
+                                    <option id="XXL">XXL</option>
+                                    <option id="M">M</option>
+                                </select>
+
+                            </div>
+
+                            <div id="precio">
+                                <p class="costo">$<span class="">1500</span></p>
+                            </div>
+
+                            <a href="" class="compra" data-id="1">Comprar</a>
+                        </div>
+                    </div>
+                    <div id="">
+                        <div>
+                            <img class="" src="./assets/img/pantalon levis.jpg" alt="">
+                            <div id="producto1">
+                                <h4 class="">Pantalon Levis</h4>
+                            </div>
+
+                            <div id="productouno">
+
+                                <label for="talles">Talles:</label>
+
+                                <select name="talles" id="talles">
+                                    <option id="XL">XL</option>
+                                    <option id="L">L</option>
+                                    <option id="XXL">XXL</option>
+                                    <option id="M">M</option>
+                                </select>
+
+                            </div>
+
+                            <div id="precio">
+                                <p class="costo">$<span class="">4000</span></p>
+                            </div>
+
+                            <a href="" class="compra" data-id="1">Comprar</a>
+                        </div>
+                    </div>
+                    <div id="">
+                        <div>
+                            <img class="" src="./assets/img/pantalon hym.jpg" alt="">
+                            <div id="producto1">
+                                <h4 class="">Pantalon HyM</h4>
+                            </div>
+
+                            <div id="productouno">
+
+                                <label for="talles">Talles:</label>
+
+                                <select name="talles" id="talles">
+                                    <option id="XL">XL</option>
+                                    <option id="L">L</option>
+                                    <option id="XXL">XXL</option>
+                                    <option id="M">M</option>
+                                </select>
+
+                            </div>
+
+                            <div id="precio">
+                                <p class="costo">$<span class="">2500</span></p>
+                            </div>
+
+                            <a href="" class="compra" data-id="1">Comprar</a>
+                        </div>
+                    </div>
+                    <div id="">
+                        <div>
+                            <img class="" src="./assets/img/campera vans.jpg" alt="">
+                            <div id="producto1">
+                                <h4 class="">Campera Vans</h4>
+                            </div>
+
+                            <div id="productouno">
+
+                                <label for="talles">Talles:</label>
+
+                                <select name="talles" id="talles">
+                                    <option id="XL">XL</option>
+                                    <option id="L">L</option>
+                                    <option id="XXL">XXL</option>
+                                    <option id="M">M</option>
+                                </select>
+
+                            </div>
+
+                            <div id="precio">
+                                <p class="costo">$<span class="">4000</span></p>
+                            </div>
+
+                            <a href="" class="compra" data-id="1">Comprar</a>
+                        </div>
+                    </div>
+                    <div id="">
+                        <div>
+                            <img class="" src="./assets/img/canguro levis.jpg" alt="">
+                            <div id="producto1">
+                                <h4 class="">Canguro Levis</h4>
+                            </div>
+
+                            <div id="productouno">
+
+                                <label for="talles">Talles:</label>
+
+                                <select name="talles" id="talles">
+                                    <option id="XL">XL</option>
+                                    <option id="L">L</option>
+                                    <option id="XXL">XXL</option>
+                                    <option id="M">M</option>
+                                </select>
+
+                            </div>
+
+                            <div id="precio">
+                                <p class="costo">$<span class="">3000</span></p>
+                            </div>
+
+                            <a href="" class="compra" data-id="1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
 
-
+    <script src="./assets/javaScript/carrito.js"></script>
+    <script src="./assets/javaScript/variablesCarrito.js"></script>
     <script src="./assets/javaScript/script.js"></script>
     <script src="./assets/javaScript/bootstrap.bundle.min.js"></script>
 </body>
