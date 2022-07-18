@@ -75,4 +75,17 @@ class Carrito {
         }
         return productosLocalStorage;
     }
+
+
 }
+
+fetch('../../elements.json')
+.then(respueta => {
+    return respueta.json()
+})
+.then(datos =>{
+    datos.forEach((producto) => {
+        console.log(datos[0].nombre)
+        
+    });
+})

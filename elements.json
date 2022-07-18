@@ -1,0 +1,49 @@
+[
+    {
+        "imagen": "../img/remera ripcurl.jpg",
+        "nombre": "Remera Ripcurl F",
+        "talles": "XL, L, XXL, M",
+        "precio": "2500",
+        "data-id": "1"
+    },
+   
+    {
+        "imagen": "../img/remera vans.jpg",
+        "nombre": "Remera Vans",
+        "talles": "XL, L, XXL, M",
+        "precio": "1500",
+        "data-id": "2"
+    },
+   
+    {
+        "imagen": "../img/pantalon levis.jpg",
+        "nombre": "Pantalon Levis",
+        "talles": "XL, L, XXL, M",
+        "precio": "4000",
+        "data-id": "3"
+    },
+   
+    {
+        "imagen": "../img/pantalon hym.jpg",
+        "nombre": "Pantalon HyM",
+        "talles": "XL, L, XXL, M",
+        "precio": "2500",
+        "data-id": "4"
+    },
+   
+    {
+        "imagen": "../img/campera vans.jpg",
+        "nombre": "Campera Vans",
+        "talles": "XL, L, XXL, M",
+        "precio": "4000",
+        "data-id": "5"
+    },
+   
+    {
+        "imagen": "../img/canguro levis.jpg",
+        "nombre": "Canguro Levis",
+        "talles": "XL, L, XXL, M",
+        "precio": "3000",
+        "data-id": "6"
+    }
+]
