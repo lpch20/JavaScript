@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="icon" href="assets/img/favicon.jpg">
     <title>Salipser</title>
 </head>
 
@@ -18,12 +21,14 @@
             <a class="navbar-brand">SALIPSER</a>
             <div id="carritoBuscardor" class="pull-right align-items-center">
                 <form class="buscador">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
                 <ul>
                     <li class="submenu">
-                        <img src="assets/img/logo de caarrito.png" id="img-carrito">
+                        <div class="imgCarro mx-auto d-block">
+                            <img src="assets/img/logo de caarrito.png" id="img-carrito">
+                        </div>
                         <div id="carrito">
 
                             <table id="lista-carrito" class="u-full-width">
@@ -32,14 +37,13 @@
                                         <th>Imagen</th>
                                         <th>Nombre</th>
                                         <th>Precio</th>
-                                        <th>Cantidad</th>
                                         <th></th>
                                     </tr>
                                 </thead>
                                 <tbody></tbody>
                             </table>
-
-                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="" id="vaciar-carrito"><button type="button" class="btn btn-primary">Vaciar Carrito</button></a>
+                            <a href="" id="ejecutar-compra"><button type="button" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </li>
                 </ul>
@@ -72,56 +76,56 @@
                         <li class="mb-1">
                             <button class="btn btn-toggle align-items-center rounded collapsed"
                                 data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                                Home
+                                Remeras
                             </button>
                             <div class="collapse" id="home-collapse" style="">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><a href="#productouno" class="link-dark rounded">Overview</a></li>
-                                    <li><a href="#" class="link-dark rounded">Updates</a></li>
-                                    <li><a href="#" class="link-dark rounded">Reports</a></li>
+                                    <li><a href="#imagen1" class="link-dark rounded">Remera Ripcurl F</a></li>
+                                    <li><a href="#imagen2" class="link-dark rounded">Remera Vans</a></li>
+                                    <li><a href="#" class="link-dark rounded"></a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="mb-1">
                             <button class="btn btn-toggle align-items-center rounded collapsed"
                                 data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                                Dashboard
+                                Pantalones
                             </button>
                             <div class="collapse" id="dashboard-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><a href="#" class="link-dark rounded">Overview</a></li>
-                                    <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                                    <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                                    <li><a href="#" class="link-dark rounded">Annually</a></li>
+                                    <li><a href="#imagen3" class="link-dark rounded">Pantalon Levis</a></li>
+                                    <li><a href="#imagen4" class="link-dark rounded">Pantalon HyM</a></li>
+                                    <li><a href="#" class="link-dark rounded"></a></li>
+                                    <li><a href="#" class="link-dark rounded"></a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="mb-1">
                             <button class="btn btn-toggle align-items-center rounded collapsed"
                                 data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                                Orders
+                                Camperas
                             </button>
                             <div class="collapse" id="orders-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><a href="#" class="link-dark rounded">New</a></li>
-                                    <li><a href="#" class="link-dark rounded">Processed</a></li>
-                                    <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                                    <li><a href="#" class="link-dark rounded">Returned</a></li>
+                                    <li><a href="#imagen5" class="link-dark rounded">Campera Vans</a></li>
+                                    <li><a href="#" class="link-dark rounded"></a></li>
+                                    <li><a href="#" class="link-dark rounded"></a></li>
+                                    <li><a href="#" class="link-dark rounded"></a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="border-top my-3"></li>
+
                         <li class="mb-1">
                             <button class="btn btn-toggle align-items-center rounded collapsed"
                                 data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                                Account
+                                Canguros
                             </button>
                             <div class="collapse" id="account-collapse" style="">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><a href="#" class="link-dark rounded">New...</a></li>
-                                    <li><a href="#" class="link-dark rounded">Profile</a></li>
-                                    <li><a href="#" class="link-dark rounded">Settings</a></li>
-                                    <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                                    <li><a href="#imagen6" class="link-dark rounded">Canguro Levis</a></li>
+                                    <li><a href="#" class="link-dark rounded"></a></li>
+                                    <li><a href="#" class="link-dark rounded"></a></li>
+                                    <li><a href="#" class="link-dark rounded"></a></li>
                                 </ul>
                             </div>
                         </li>
@@ -131,7 +135,7 @@
 
                     <div class="">
                         <div>
-                            <img class="" src="./assets/img/remera ripcurl.jpg" alt="">
+                            <img id="imagen2" src="./assets/img/remera ripcurl.jpg" alt="">
                             <div id="producto1">
                                 <h4 class="">Remera Ripcurl F</h4>
                             </div>
@@ -153,17 +157,17 @@
                                 <p class="costo">$<span class="">2500</span></p>
                             </div>
 
-                            <a href="" class="compra" data-id="1">Comprar</a>
+                            <a href="" data-id="1"><button type="button" class="btn btn-primary compra">Comprar</button></a>
                         </div>
                     </div>
                     <div id="">
                         <div>
-                            <img class="" src="./assets/img/remera vans.jpg" alt="">
-                            <div id="producto1">
+                            <img id="imagen2" src="./assets/img/remera vans.jpg" alt="">
+                            <div id="producto2">
                                 <h4 class="">Remera Vans</h4>
                             </div>
 
-                            <div id="productouno">
+                            <div id="productodos">
 
                                 <label for="talles">Talles:</label>
 
@@ -180,17 +184,17 @@
                                 <p class="costo">$<span class="">1500</span></p>
                             </div>
 
-                            <a href="" class="compra" data-id="2">Comprar</a>
+                            <a href="" data-id="2"><button type="button" class="btn btn-primary compra">Comprar</button></a>
                         </div>
                     </div>
                     <div id="">
                         <div>
-                            <img class="" src="./assets/img/pantalon levis.jpg" alt="">
-                            <div id="producto1">
+                            <img id="imagen3" src="./assets/img/pantalon levis.jpg" alt="">
+                            <div id="producto3">
                                 <h4 class="">Pantalon Levis</h4>
                             </div>
 
-                            <div id="productouno">
+                            <div id="productotres">
 
                                 <label for="talles">Talles:</label>
 
@@ -207,17 +211,17 @@
                                 <p class="costo">$<span class="">4000</span></p>
                             </div>
 
-                            <a href="" class="compra" data-id="3">Comprar</a>
+                            <a href="" data-id="3"><button type="button" class="btn btn-primary compra">Comprar</button></a>
                         </div>
                     </div>
                     <div id="">
                         <div>
-                            <img class="" src="./assets/img/pantalon hym.jpg" alt="">
-                            <div id="producto1">
+                            <img id="imagen4" src="./assets/img/pantalon hym.jpg" alt="">
+                            <div id="producto4">
                                 <h4 class="">Pantalon HyM</h4>
                             </div>
 
-                            <div id="productouno">
+                            <div id="productocuatro">
 
                                 <label for="talles">Talles:</label>
 
@@ -234,17 +238,17 @@
                                 <p class="costo">$<span class="">2500</span></p>
                             </div>
 
-                            <a href="" class="compra" data-id="4">Comprar</a>
+                            <a href="" data-id="4"><button type="button" class="btn btn-primary compra">Comprar</button></a>
                         </div>
                     </div>
                     <div id="">
                         <div>
-                            <img class="" src="./assets/img/campera vans.jpg" alt="">
-                            <div id="producto1">
+                            <img id="imagen5" src="./assets/img/campera vans.jpg" alt="">
+                            <div id="producto5">
                                 <h4 class="">Campera Vans</h4>
                             </div>
 
-                            <div id="productouno">
+                            <div id="productocinco">
 
                                 <label for="talles">Talles:</label>
 
@@ -261,17 +265,17 @@
                                 <p class="costo">$<span class="">4000</span></p>
                             </div>
 
-                            <a href="" class="compra" data-id="5">Comprar</a>
+                            <a href="" data-id="5"><button type="button" class="btn btn-primary compra">Comprar</button></a>
                         </div>
                     </div>
                     <div id="">
                         <div>
-                            <img class="" src="./assets/img/canguro levis.jpg" alt="">
-                            <div id="producto1">
+                            <img id="imagen6" src="./assets/img/canguro levis.jpg" alt="">
+                            <div id="producto6">
                                 <h4 class="">Canguro Levis</h4>
                             </div>
 
-                            <div id="productouno">
+                            <div id="productoseis">
 
                                 <label for="talles">Talles:</label>
 
@@ -288,13 +292,137 @@
                                 <p class="costo">$<span class="">3000</span></p>
                             </div>
 
-                            <a href="" class="compra" data-id="6">Comprar</a>
+                            <a href="" data-id="6"><button type="button" class="btn btn-primary compra">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+                <!-- Left -->
+                <div class="me-5">
+                    <span>Encuentranos en las siguientes redes sociales:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="https://www.facebook.com/" class="text-white me-4" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/" class="text-white me-4" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" class="text-white me-4" target="_blank">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="text-white me-4" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" class="text-white me-4" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/" class="text-white me-4" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Nuestra empresa</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                              Somos una empresa dedicada a la venta de productos de las principales tienda de nuestro pais. Nuestras ventas estan autorizadas y todos nuestros productos son oficiales.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Productos</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#" class="text-white">Remera Ripcurl F</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Remera Vans</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Pantalon Levis</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Pantalon HyM</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Campera Vans</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Canguro Levis</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Otros</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-white">Ayuda</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Proximamente</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Novedades</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Sugierenos</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contacto</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> Montevideo, Canelones 2222</p>
+                            <p><i class="fas fa-envelope mr-3"></i> salipser@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> 09069843</p>
+                            <p><i class="fas fa-print mr-3"></i> 2226 4867</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2022 Copyright:
+                <a class="text-white" href="index.html">Salipser</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
 
     </div>
 
@@ -303,6 +431,7 @@
     <script src="./assets/javaScript/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./elements.json"></script>
+
 </body>
 
 </html>
