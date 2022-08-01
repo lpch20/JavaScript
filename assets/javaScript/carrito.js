@@ -136,6 +136,6 @@ fetch("../../elements.json") // Se utiliza JSON para la subida de los productos 
     })
     .then((datos) => {
         datos.forEach(function () {
-            console.log(datos.nombre);
+            console.log(respuesta);
         });
     });
