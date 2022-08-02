@@ -130,12 +130,12 @@ class Carrito {
     }
 }
 
-fetch("../../elements.json") // Se utiliza JSON para la subida de los productos a la venta. 
+fetch("../../elements.json") // Se utiliza JSON para la subida de los productos a la venta 
     .then((respueta) => {
         return respueta.json();
     })
     .then((datos) => {
         datos.forEach(function () {
-            console.log(datos.nombre);
+            console.log(respuesta);
         });
     });
