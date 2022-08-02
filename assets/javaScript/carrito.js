@@ -136,6 +136,6 @@ fetch("https://lpch20.github.io/JavaScript/public/data/elements.json") // Se uti
     })
     .then((datos) => {
         datos.forEach(function () {
-            console.log(respuesta);
+            console.log(elements.json);
         });
     });
