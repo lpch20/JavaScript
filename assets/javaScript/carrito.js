@@ -130,7 +130,7 @@ class Carrito {
     }
 }
 
-fetch(".././public/data/elements.json") // Se utiliza JSON para la subida de los productos a la venta 
+fetch("https://lpch20.github.io/public/data/elements.json") // Se utiliza JSON para la subida de los productos a la venta 
     .then((respueta) => {
         return respueta.json();
     })
